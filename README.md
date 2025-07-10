@@ -1,6 +1,6 @@
 # Customer Churn Prediction
 
-This project aims to predict customer churn based on behavioral and demographic data, offering business insights into customer retention strategies.
+This project explores customer churn prediction using a real-world telecom dataset as part of my Master’s in Data Science qualifying exam. The end-to-end workflow includes data cleaning, EDA, feature engineering, SMOTE-based class balancing, model development, and interpretability. I evaluated multiple classification models including Logistic Regression, K-Nearest Neighbors, SVM, Random Forest, and XGBoost. Model tuning was performed using GridSearchCV, and feature importance was interpreted using SHAP and permutation methods.
 
 ##  Dataset Overview
 
