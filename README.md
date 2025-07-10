@@ -3,7 +3,7 @@
 
 This project aims to predict customer churn based on behavioral and demographic data, offering business insights into customer retention strategies.
 
-## 📊 Dataset Overview
+##  Dataset Overview
 
 - **Rows**: 3,150 (after removing 300 duplicates: 2,850 remain)
 - **Features**: 14 numerical columns
@@ -14,20 +14,20 @@ This project aims to predict customer churn based on behavioral and demographic 
 - **Billing/Plan**: Charge Amount, Tariff Plan, Subscription Length
 - **Customer Info**: Age, Age Group, Customer Value, Status, Complains, Call Failure
 
-## 🔧 Data Processing
+##  Data Processing
 
 - Checked for and removed missing values and duplicates.
 - Applied SMOTE for class imbalance (~15.6% churn rate).
 - Scaled numerical features and analyzed distribution for skewness.
 - Identified multicollinearity among features.
 
-## 🔍 Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 - **Complains** and **Status** strongly correlate with churn.
 - **Customer Value** and **Usage metrics** negatively correlate with churn.
 - Plans and statuses give actionable insights into customer satisfaction.
 
-## 🤖 Models Evaluated
+##  Models Evaluated
 
 | Model                  | Accuracy | Precision (Churn=1) | Recall (Churn=1) | F1-Score (Churn=1) |
 |------------------------|----------|----------------------|-------------------|---------------------|
@@ -39,18 +39,18 @@ This project aims to predict customer churn based on behavioral and demographic 
 | Random Forest (Tuned)  | 96%      | 0.83                 | 0.93              | 0.88                |
 | XGBoost (Tuned)        | 96%      | 0.81                 | 0.94              | 0.87                |
 
-## 🧠 Feature Importance & Interpretation
+##  Feature Importance & Interpretation
 
 - **Top Features** (SHAP): Complains, Frequency of SMS, Seconds of Use, Customer Value
 - Tree-based models like Random Forest & XGBoost handled multicollinearity better.
 - SHAP and permutation importance used to interpret predictions.
 
-## 🏆 Key Takeaways
+##  Key Takeaways
 
 - **Best Overall Model**: Tuned XGBoost (balanced performance on precision, recall, F1)
 - **High Recall Models**: SVM and Logistic Regression (good for minimizing missed churns)
 - **Best Trade-off**: Random Forest (Tuned)
 
----
 
-📁 For code, preprocessing, visualizations, and evaluation details, see the notebook/script files in this repository.
+
+ For code, preprocessing, visualizations, and evaluation details, see the notebook/script files in this repository.
