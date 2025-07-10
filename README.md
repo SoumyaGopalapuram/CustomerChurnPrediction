@@ -1,4 +1,3 @@
-
 # Customer Churn Prediction
 
 This project aims to predict customer churn based on behavioral and demographic data, offering business insights into customer retention strategies.
@@ -27,6 +26,14 @@ This project aims to predict customer churn based on behavioral and demographic 
 - **Customer Value** and **Usage metrics** negatively correlate with churn.
 - Plans and statuses give actionable insights into customer satisfaction.
 
+##  Sample Visualizations
+
+These are a few key charts from the analysis:
+
+![Churn Distribution](visualizations/churn_distribution.png)
+![Correlation Heatmap](visualizations/correlation_heatmap.png)
+![Feature Importance - SHAP](visualizations/shap_feature_importance.png)
+
 ##  Models Evaluated
 
 | Model                  | Accuracy | Precision (Churn=1) | Recall (Churn=1) | F1-Score (Churn=1) |
@@ -52,5 +59,4 @@ This project aims to predict customer churn based on behavioral and demographic 
 - **Best Trade-off**: Random Forest (Tuned)
 
 
-
- For code, preprocessing, visualizations, and evaluation details, see the notebook/script files in this repository.
+ For code, preprocessing, visualizations, and evaluation details, see the notebook/script files and plots in this repository.
